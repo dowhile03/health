@@ -1,0 +1,33 @@
+body {
+    background-color: #00081e;
+}
+
+
+h4,h1,h2,h3{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bolder
+}
+
+hr{
+    background-color: white;
+    height:1.5rem;
+}
+
+.container__main{
+    margin-top:5%
+}
+
+.p-tag{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    text-align: left;
+}
+.btn__home{
+    border-radius:25px 25px 25px 25px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+.text-container{
+    margin-top: 5%;
+}
