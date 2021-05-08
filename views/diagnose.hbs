@@ -1,28 +1,32 @@
 <div class="container">
-    <h1>Daignosis</h1>
+    <h1 class="self_ass_heading">Self Assessment</h1>
 </div>
 
-<div class="row">
+<div class="row" style="padding : 0rem; margin : 0rem;">
     <form class=" diag_Form col s12" action="/showdata" method="POST" onSubmit="return formValidate()">
         <div class="row"> 
             <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate" name="first_name" >
+                <input id="first_name" type="text" class="validate" name="first_name" required>
                 <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s6">
-                <input id="last_name" type="text" class="validate" name="last_name">
+                <input id="last_name" type="text" class="validate" name="last_name" required>
                 <label for="last_name">Last Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="age" type="number" class="validate" name="age" required>
+                <label for="age">Age</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="bodyTemp" type="text" class="validate" name="bodyTemp">
+                <input id="bodyTemp" type="number" class="validate" name="bodyTemp" required>
                 <label for="bodyTemp">Body Temperature in farhenhite</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="oxyLevel" type="text" class="validate" name="oxyLevel">
+                <input id="oxyLevel" type="number" class="validate" name="oxyLevel" required>
                 <label for="oxyLevel">Oxygen Level</label>
             </div>
         </div>
@@ -30,7 +34,7 @@
             <label>
                 <h6>Do you have cough?</h6>
             </label>
-            <select class="browser-default" id="cough" name="cough">
+            <select class="browser-default" id="cough" name="cough" required>
               <option value="Yes">YES</option>
                 <option value="No">NO</option>
             </select>
@@ -39,7 +43,7 @@
             <label>
                 <h6>Do you have headache?</h6>
             </label>
-            <select class="browser-default" name="headache" name="headache">
+            <select class="browser-default" name="headache" name="headache" required>
                 <option value="Yes">YES</option>
                 <option value="No">NO</option>
             </select>
@@ -48,7 +52,7 @@
             <label>
                 <h6>Can you taste?</h6>
             </label>
-            <select class="browser-default" id="taste" name="taste">
+            <select class="browser-default" id="taste" name="taste" required>
                <option value="Yes">YES</option>
                 <option value="No">NO</option>
             </select>
@@ -57,18 +61,18 @@
             <label>
                 <h6>Can you smell?</h6>
             </label>
-            <select class="browser-default" id="smell" name="smell">
+            <select class="browser-default" id="smell" name="smell" required>
                 <option value="Yes">YES</option>
                 <option value="No">NO</option>
             </select>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="email" type="email" class="validate" name="email">
+                <input id="email" type="email" class="validate" name="email" required>
                 <label for="email">Email</label>
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="text-align: center">
 
             <input type="submit" value="Submit" class="btn waves-effect waves-light" id="submit" name="submit">
         </div>

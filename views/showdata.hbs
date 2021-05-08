@@ -1,15 +1,48 @@
-{{#if myObj}}
-        <h4 class="alert alert-danger">Patient Name: {{ myObj.firstName }} {{ myObj.lastName }}</h4>
-        <h4 class="alert alert-danger">Body Temperature : {{ myObj.bodyTemp }} °F</h4>
-        <h6>{{tempMessage}}</h6>
-        <h4 class="alert alert-danger">Oxygen Level : {{ myObj.oxyLevel }}</h4>
-        <h4 class="alert alert-danger">Do you have cough?</h4>
-        <h4 class="alert alert-danger">{{ myObj.cough }}</h4>
-        <h4 class="alert alert-danger">Do you have headache?</h4>
-        <h4 class="alert alert-danger">{{ myObj.headache }}</h4>
-        <h4 class="alert alert-danger">Can you smell?</h4>
-        <h4 class="alert alert-danger">{{ myObj.smell }}</h4>
-        <h4 class="alert alert-danger">Can you taste?</h4>
-        <h4 class="alert alert-danger">{{ myObj.taste }}</h4>
-        <h4 class="alert alert-danger">Email Address : {{ myObj.email }}</h4>
-{{/if}}
+<div class="innerContainer">
+        <h1  style="text-align:center">Self-assessment for symptomatic patients</h1>
+        <br>
+        <br>
+        {{#if myObj}}
+        <div class="nameContainer">
+                <h6 class="alert alert-danger">Patient Name: <span class="answer">{{ myObj.firstName }} {{ myObj.lastName }}</span></h6>
+                <h6 class="alert alert-danger">Email Address : <span class="answer">{{ myObj.email }}</span></h6>
+        </div>
+        <div class="ageContainer">
+                <h6 class="alert alert-danger" >Age : <span class="answer">{{ myObj.age }}</span></h6>
+                <h6 class="alert alert-danger" >Date: <span class="answer">{{ date }}</span></h6>
+        </div>
+        <div class="lowercontainer">
+                <h6 class="alert alert-danger">Body Temperature :&ensp;<span class="answer">{{ myObj.bodyTemp }}</span>°F</h6>
+                <br>
+                <h6>&ensp;<span class="response">Solution</span>&ensp;{{ tempMessage }}</h6>
+                <br>
+                <br>
+                <h6 class="alert alert-danger">Oxygen Level :&ensp;<span class="answer">{{ myObj.oxyLevel }}</span></h6>
+                <br>
+                <h6>&ensp;<span class="response">Solution</span>&ensp;{{ oxygenmsg }}</h6>
+                <br>
+                <br>
+                <h6 class="alert alert-danger">Do you have cough?&ensp;<span class="answer">{{ myObj.cough }}</span></h6>
+                <br>
+                <h6>&ensp;<span class="response">Solution</span>&ensp;{{ coughmsg }}</h6>
+                <br>
+                <br>
+                <h6 class="alert alert-danger">Do you have headache?&ensp;<span class="answer">{{ myObj.headache }}</span></h6>
+                <br>
+                <h6>&ensp;<span class="response">Solution</span>&ensp;{{ headmsg }}</h6>
+                <br>
+                <br>
+                <h6 class="alert alert-danger">Can you smell?&ensp;<span class="answer">{{ myObj.smell }}</span></h6>
+                <br>
+                <h6>&ensp;<span class="response">Solution</span>&ensp;{{ smellmsg }}</h6>
+                <br>
+                <br>
+                <h6 class="alert alert-danger">Can you taste?&ensp;<span class="answer">{{ myObj.taste }}</span></h6>
+                <br>
+                <h6>&ensp;<span class="response">Solution</span>&ensp;{{ tastemsg }}</h6>
+                <br>
+                <br>
+                <h6>Need for test:&ensp;<span class="test">&ensp;{{ test }}</span></h6>
+        </div>
+        {{/if}}
+</div>
