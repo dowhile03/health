@@ -14,6 +14,8 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.engine(".hbs", exphbs({ defaultLayout: "main", extname: ".hbs" }));
 
+app.use(express.static(__dirname + '/public'));
+
 app.set('view engine', 'hbs')
 app.use('/',require('./routes/home'))
 app.use('/',require('./routes/blood'))
