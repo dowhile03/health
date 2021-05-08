@@ -1,3 +1,78 @@
 <div class="container">
-    <h1>Blood Pages</h1>
+    <h1>Daignosis</h1>
 </div>
+
+<div class="row">
+    <form class="col s12" action="/showdata" method="POST" onSubmit="return formValidate()">
+        <div class="row"> 
+            <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate" name="first_name" >
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate" name="last_name">
+                <label for="last_name">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="bodyTemp" type="text" class="validate" name="bodyTemp">
+                <label for="bodyTemp">Body Temperature in farhenhite</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="oxyLevel" type="text" class="validate" name="oxyLevel">
+                <label for="oxyLevel">Oxygen Level</label>
+            </div>
+        </div>
+        <div class="row">
+            <label>
+                <h6>Do you have cough?</h6>
+            </label>
+            <select class="browser-default" id="cough" name="cough">
+              <option value="Yes">YES</option>
+                <option value="No">NO</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>
+                <h6>Do you have headache?</h6>
+            </label>
+            <select class="browser-default" name="headache" name="headache">
+                <option value="Yes">YES</option>
+                <option value="No">NO</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>
+                <h6>Can you taste?</h6>
+            </label>
+            <select class="browser-default" id="taste" name="taste">
+               <option value="Yes">YES</option>
+                <option value="No">NO</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>
+                <h6>Can you smell?</h6>
+            </label>
+            <select class="browser-default" id="smell" name="smell">
+                <option value="Yes">YES</option>
+                <option value="No">NO</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate" name="email">
+                <label for="email">Email</label>
+            </div>
+        </div>
+        <div class="row">
+
+            <input type="submit" value="Submit" class="btn waves-effect waves-light" id="submit" name="submit">
+        </div>
+    </form>
+</div>
+
+<script src="/js/index.js"></script>

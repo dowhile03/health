@@ -1,0 +1,15 @@
+{{#if myObj}}
+        <h4 class="alert alert-danger">Patient Name: {{ myObj.firstName }} {{ myObj.lastName }}</h4>
+        <h4 class="alert alert-danger">Body Temperature : {{ myObj.bodyTemp }} °F</h4>
+        <h6>{{tempMessage}}</h6>
+        <h4 class="alert alert-danger">Oxygen Level : {{ myObj.oxyLevel }}</h4>
+        <h4 class="alert alert-danger">Do you have cough?</h4>
+        <h4 class="alert alert-danger">{{ myObj.cough }}</h4>
+        <h4 class="alert alert-danger">Do you have headache?</h4>
+        <h4 class="alert alert-danger">{{ myObj.headache }}</h4>
+        <h4 class="alert alert-danger">Can you smell?</h4>
+        <h4 class="alert alert-danger">{{ myObj.smell }}</h4>
+        <h4 class="alert alert-danger">Can you taste?</h4>
+        <h4 class="alert alert-danger">{{ myObj.taste }}</h4>
+        <h4 class="alert alert-danger">Email Address : {{ myObj.email }}</h4>
+{{/if}}
