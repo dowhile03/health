@@ -71,7 +71,7 @@ hr {
   border: 5px solid white;
 }
 
-#myForm1, #myForm2{
+#myForm1, #myForm2,.diag_Form{
     background:white;
     padding: 2%;
     border-radius: 25px 25px 25px 25px;
