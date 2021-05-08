@@ -13,4 +13,6 @@ app.use(express.static(__dirname + '/public'));
 app.set('view engine', 'hbs')
 app.use('/',require('./routes/home'))
 app.use('/',require('./routes/blood'))
+app.use('/',require('./routes/Donate'))
+app.use('/',require('./routes/helpline'))
 app.listen(port)
