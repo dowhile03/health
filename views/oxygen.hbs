@@ -1,0 +1,140 @@
+<div style="margin-bottom:5%">
+
+    <a class="waves-effect btn-small indigo accent-1 btn__home" id="goback" onclick="goBack()">Go back</a>
+    <a class="waves-effect btn-large btn__oxy" id="btnOxy" onclick="openOxygen()">Find Oxygen</a>
+    <a class="waves-effect btn-large btn__oxy_two" id="btnBed" onclick="openBed()">Find Beds</a>
+</div>
+
+
+<div class="row" id="myForm1">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                <label for="disabled">Disabled</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="input-field col s12">
+
+                <button class="waves-effect btn-large black-text btn__oxy">Submit</button>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<div class="row" id="myForm2">
+    <form class="col s12">
+        <div class="row">
+            <div class="input-field col s6">
+                <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input disabled value="I am not editable" id="disabled" type="text" class="validate">
+                <label for="disabled">Disabled</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="password" type="password" class="validate">
+                <label for="password">Password</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+    
+           <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    document.getElementById('myForm1').style.display = "none";
+    document.getElementById('myForm2').style.display = "none";
+    document.getElementById('goback').style.display = "none"
+    function openOxygen() {
+        document.getElementById('goback').style.display = "block"
+        document.getElementById('myForm1').style.display = "block";
+        document.getElementById('myForm2').style.display = "none";
+        document.getElementById('btnOxy').style.display = "none";
+        document.getElementById('btnBed').style.display = "none";
+    }
+    function goBack() {
+        document.getElementById('btnOxy').style.display = "block";
+        document.getElementById('btnBed').style.display = "block";
+        document.getElementById('goback').style.display = "none"
+        document.getElementById('myForm1').style.display = "none";
+        document.getElementById('myForm2').style.display = "none";
+
+    }
+
+    function openBed() {
+        document.getElementById('btnOxy').style.display = "none";
+        document.getElementById('btnBed').style.display = "none";
+        document.getElementById('myForm1').style.display = "none";
+        document.getElementById('goback').style.display = "block"
+        document.getElementById('myForm2').style.display = "block";
+
+
+    }
+</script>
