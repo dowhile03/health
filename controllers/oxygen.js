@@ -15,8 +15,9 @@ exports.getDetails = (req, res) => {
   const number_of_cylinders = req.body.number_of_cylinders;
   const phone = req.body.phone;
   const email = req.body.email;
+  const date = new Date().toLocaleString();
 
-  const object = {patientName,age,city,state,hospital,bloodGroup,number_of_cylinders,phone,email}
+  const object = {patientName,age,city,state,hospital,bloodGroup,number_of_cylinders,phone,email,date}
 
   db.insert(object,(err, result) => {
       if (err) {

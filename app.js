@@ -23,6 +23,7 @@ app.use('/',require('./routes/Donate'))
 app.use('/',require('./routes/helpline'))
 
 app.use('/',require('./routes/daignosis'))
+app.use('/',require('./routes/admin'))
 
 
 app.listen(port)
