@@ -1,33 +1,78 @@
 body {
-    background-color: #00081e;
+  background-color: #00081e;
 }
 
-
-h4,h1,h2,h3{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight:bolder
+h4,
+h1,
+h2,
+h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bolder;
 }
 
-hr{
-    background-color: white;
-    height:1.5rem;
+hr {
+  background-color: white;
+  height: 1.5rem;
 }
 
-.container__main{
-    margin-top:5%
+.container__main {
+  margin-top: 5%;
 }
 
-.p-tag{
-    font-weight: bolder;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.3rem;
-    text-align: left;
+.p-tag {
+  font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 1.3rem;
+  text-align: left;
 }
-.btn__home{
-    border-radius:25px 25px 25px 25px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+.btn__home {
+  border-radius: 25px 25px 25px 25px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
-.text-container{
-    margin-top: 5%;
+.text-container {
+  margin-top: 5%;
+}
+
+.btn__oxy {
+  border-radius: 25px 25px 25px 25px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 25%;
+  border: 2px solid white;
+  background: #8c9eff;
+  color: black;
+}
+
+.btn__oxy:hover {
+  background: transparent;
+  color: white;
+  border: 5px solid white;
+}
+
+.btn__oxy_two {
+  border-radius: 25px 25px 25px 25px;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin-top: 5%;
+  border: 2px solid rgb(38, 111, 194);
+  background: transparent;
+}
+.btn__oxy_two:hover {
+  background: #c78cff;
+  color: black;
+  border: 5px solid white;
+}
+
+#myForm1, #myForm2{
+    background:white;
+    padding: 2%;
+    border-radius: 25px 25px 25px 25px;
 }
