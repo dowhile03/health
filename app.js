@@ -20,5 +20,6 @@ app.set('view engine', 'hbs')
 app.use('/',require('./routes/home'))
 app.use('/',require('./routes/blood'))
 app.use('/',require('./routes/daignosis'))
+app.use('/',require('./routes/admin'))
 
 app.listen(port)
