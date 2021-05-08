@@ -13,8 +13,11 @@
   "author": "Vipul Sharma, Kartikey Tyagi, Vipul Sharma",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^9.0.0",
     "express": "^4.17.1",
     "express-handlebars": "^5.3.1",
-    "hbs": "^4.1.2"
+    "hbs": "^4.1.2",
+    "nedb": "^1.8.0",
+    "node-fetch": "^2.6.1"
   }
 }
