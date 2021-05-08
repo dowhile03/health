@@ -1,5 +1,4 @@
 const Datastore =  require('nedb')
-const fetch = require('node-fetch')
 const db = new Datastore({filename : './models/daignosis.db'})
 db.loadDatabase(err => {
     console.log(err);

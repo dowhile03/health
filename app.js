@@ -1,7 +1,6 @@
 
 const express = require('express');
 const exphbs = require("express-handlebars");
-const fetch = require('node-fetch')
 const path = require('path')
 const dotenv = require('dotenv')
 dotenv.config()
