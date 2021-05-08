@@ -76,3 +76,47 @@ hr {
     padding: 2%;
     border-radius: 25px 25px 25px 25px;
 }
+
+.innerContainer {
+  color: white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.nameContainer {
+  float: left;
+}
+.ageContainer {
+  float: right;
+}
+
+.lowercontainer {
+  padding-top: 10rem;
+}
+
+.response {
+  color: #00081e;
+  font-size: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2px;
+  border: 3px solid green;
+}
+
+.answer {
+  font-size: 1.2rem;
+  color: lightblue;
+}
+
+.test {
+  font-size: 2rem;
+  color: red;
+}
+
+.mainForm {
+  text-align: center;
+}
+.self_ass_heading {
+  text-align: center;
+  color: white;
+}
