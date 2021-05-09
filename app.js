@@ -11,7 +11,7 @@ app.use(express.urlencoded({
     extended: true
 }))
 app.use(express.json());
-app.engine(".hbs", exphbs({ defaultLayout: "false", extname: "hbs", layoutsDir: "views/layouts"}));
+app.engine(".hbs", exphbs({ defaultLayout: "main", extname: "hbs", layoutsDir: "views/layouts"}));
 
 app.use(express.static(__dirname + '/public'));
 
