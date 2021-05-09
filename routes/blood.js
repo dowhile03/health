@@ -16,4 +16,11 @@ router.get("/message", (req, res) => {
   res.render("message");
 });
 
+router.post('/fetchadmindata',oxygen.adminlogin);
+
+router.get('/fetchadmindata',oxygen.fetchData);
+router.get('/admin',(req, res) => {
+  res.render('admin')
+})
+
 module.exports = router;
